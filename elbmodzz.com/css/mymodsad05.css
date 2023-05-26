@@ -1,0 +1,185 @@
+.content #itemcontainer {
+    display: inline-flex !important;
+}
+
+.card {
+    background-color: rgb(14, 14, 14);
+    height: fit-content;
+    /* min-height: 83%; */
+    max-height: 100% !important;
+    margin-top: 30px;
+    width: 33%;
+    display: inline-block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0px 10px 50px 10px;;
+}
+
+.card img {
+    margin-top: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 80%;
+}
+
+.card h4 {
+    font-weight: normal;
+    color: gray;
+}
+
+.card .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0px;
+}
+
+.card .video-container iframe {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.card .button {
+    display: inline-block;
+    margin: 19px 10px 0px 10px;
+    background-color: rgb(58, 58, 58);
+    padding: 10px 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-weight: bold;
+    cursor: not-allowed;
+    width: 65%;
+
+    transition: 0.2s ease border-radius;
+}
+
+.card .last {
+    margin-bottom: 25px !important;
+}
+
+.card .button:hover {
+    border-radius: 15px;
+}
+
+.card .button .fa-discord {
+    font-weight: normal;
+}
+
+.card .button i {
+    font-size: 22px;
+    position: relative;
+    top: 2px;
+}
+
+@media only screen and (max-height: 600px) {
+    @media only screen and (max-width: 1200px) {
+        .sidelinks {
+            width: 215px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content #itemcontainer {
+        top: 10px !important;
+        height: calc(100% - 235px) !important;
+    }
+
+    .card .button {
+        font-size: 14px;
+    }
+
+    .card .button i {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card .button {
+        font-size: 10px;
+    }
+
+    .card .button {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content #itemcontainer {
+        display: block !important;
+        height: calc(100% - 200px) !important;
+    }
+
+    @media only screen and (max-height: 600px) {
+        .content h1 {
+            color: transparent;
+        }
+    }
+    
+    .card {
+        width: calc(100% - 20px);
+        min-height: 83%;
+        max-height: unset !important;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .card .button {
+        font-size: 16px;
+    }
+
+    .card .button i {
+        font-size: 18px;
+    }
+
+    .card .button {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card img {
+        width: 80%;
+    }
+
+    .content #itemcontainer {
+        height: calc(100% - 117px) !important;
+    }
+
+    @media only screen and (max-height: 600px) {
+        .widelegal-background {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .content #itemcontainer {
+        height: calc(100% - 54px) !important;
+    }
+
+    #sidelinks-little {
+        position: relative;
+    }
+
+    #language-little {
+        left: 0px !important;
+        bottom: 8px !important;
+    }
+
+    #legal-little {
+        bottom: -68px !important;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .content #itemcontainer {
+            height: calc(100% - 210px);
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.content {
+    width: calc(100% - 30px);
+    left: 15px;
+}
+
+.content h3 {
+    font-weight: normal;
+    color: rgb(187, 187, 187);
+}
+
+.content .option {
+    width: calc(100% - 30px);
+    background-color: #1d1d1d;
+    margin: 10px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 30px 0px 30px 30px;
+    transition: 0.2s ease-out border-radius;
+}
+
+.content .option:hover {
+    border-radius: 20px;
+}
+
+.content .option i {
+    margin-right: 20px;
+}
+
+#embed {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    transition: 0.2s ease;
+}
+
+#embed i {
+    font-size: 36px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: #292929a8;
+    border-radius: 100px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+#embed iframe {
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    z-index: 1;
+}
+
+#embed img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        overflow-y: auto;
+        height: calc(100% - 279px);
+        top: 122px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .sidelinks {
+        display: none;
+    }
+
+    .content {
+        top: 120px;
+        height: calc(100% - 120px);
+    }
+
+    #page-title {
+        margin-left: 10px;
+    }
+
+    header {
+        backdrop-filter: blur(5px);
+        background-color: #2525258a;
+    }
+
+    .widelegal-background {
+        display: none !important;
+    }
+
+    .legal {
+        bottom: unset;
+        left: unset;
+        top: 29px;
+        z-index: 1;
+        right: 100px;
+        width: unset;
+    }
+
+    .language {
+        bottom: unset;
+        left: unset !important;
+        right: 270px !important;
+        z-index: 1;
+        top: 45px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .legal {
+        display: block;
+    }
+
+    .widelegal-background {
+        display: block;
+    }
+
+    @media only screen and (min-height: 600px) {
+        .content {
+            height: calc(100% - 123px);
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .legal {
+        display: none;
+    }
+}
